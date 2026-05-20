@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exercise 42: Maxwell Scientific</title>
+<style>
+/* 1. CSS GỐC TỪ ĐỀ BÀI CỦA BẠN */
+BODY { 
+    color: green;  
+    background: white url('Draft.jpg') no-repeat fixed center center; 
+} 
+H1, H2, H3, H4, H5, H6 { 
+    font-family: Arial, Helvetica, sans-serif; 
+} 
+ADDRESS { 
+    font-size: 0.9em;  
+    font-style: normal;  
+    text-align: center;  
+    text-transform: uppercase; 
+} 
+BLOCKQUOTE { 
+    background-color: silver; 
+} 
+UL {
+    list-style-image: url("images/Apple.jpg");
+    list-style-position: outside;
+    padding-left: 30px;
+}
+UL B { 
+    color: rgb(155,0,0); 
+} 
+A { 
+    font-size: 0.9em;  
+    color: green; /* Màu xanh lá mặc định của toàn trang */
+} 
+A:hover { 
+    color: red;  
+    text-transform: uppercase; 
+    font-weight: bold; 
+} 
+.Special { 
+    color: rgb(153,102,6);  
+    font-weight: bold; 
+} 
+DIV.Article { 
+    padding: 0.5em;  
+    border-style: solid;  
+    border-width: 2px;  
+    background-color: rgb(252,221,163); 
+    width: 250px;  
+    float: right; 
+}
+
+/* 2. CSS BỔ SUNG ĐỂ CĂN CHỈNH GIỐNG HỆT ẢNH MẪU */
+.center-align {
+    text-align: center;
+}
+.banner-links {
+    margin-bottom: 20px;
+}
+.banner-links a {
+    margin: 0 10px;
+    color: blue;
+    text-decoration: underline; /* Tạo gạch chân giống ảnh mẫu */
+}
+hr {
+    border: 0;
+    border-top: 1px solid green;
+}
+</style>
+</head>
+<body>
+
+    <div class="center-align">
+        <img src="images/MWSLogo.gif" alt="Maxwell Scientific - school science supplies and more!">
+        <div class="banner-links">
+            <a href="#">Astronomy</a>
+            <a href="#">Chemistry</a>
+            <a href="#">Electronics</a>
+            <a href="#">Engineering</a>
+            <a href="#">Physics</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 class="Special">Astronomy</h2>
+
+    <p>Maxwell Scientific provides a wide range of astronomical products - perfect of classroom demonstrations and projects. Choose from the finest equipment from Newton&trade; DC Optics,&trade; and StarVision&trade;.</p>
+
+    <div class="Article">
+        <div class="Special" style="font-size: 1.2em; margin-bottom: 15px;">Run the Messier Marathon</div>
+        
+        <img src="images/m20.jpg" alt="Messier Object" style="float: right; margin-left: 5px; width: 65px;">
+        
+        <p style="margin-top: 0;">It's time for the annual <span style="color: green; font-weight: bold;">Messier Marathon</span>. Instead of lacing up their Nikes, amateur astronomers will be hauling telescopes, star charts, and a hefty pot of coffee in an all-night vigil hunting the Messier objects.</p>
+        
+        <p><span style="color: green; font-weight: bold;">Messier objects</span> are stellar objects, classified by astronomer <span style="color: green; font-weight: bold;">Charles Messier</span> in the 18th century, ranging from distant galaxies to star clusters to stellar nebula. March is the only month in the year in which all 110 Messier objects are in the sky. Unfortunately, if you want to see all of them, you have to start looking right after sunset and continue until just before sunrise &mdash; hence the term, "marathon."</p>
+        
+        <p>Ironically, Charles Messier wasn't all that interested in his objects. He made the list in order to <i>avoid</i> seeing them. Messier was more interested in discovering new comets and these beautiful stellar objects were often mistaken for comets before Messier made his list.</p>
+    </div>
+
+    <h3 class="Special">Featured Astronomical Products</h3>
+
+    <ul class="UL">
+        <li><b>Refractor Kit:</b> <span class="Special">March Special! Learn about the science of optics by building your own 18" long, 3X refractor telescope. Price $10.95. Stock Number: RK01-085</li></span>
+        <li><b>NightDisk:</b> View the night sky for any night and time of the year with this attractive and useful star disk. Price $19.95. Stock Number: ND25-100</li>
+        <li><b>Constellation Globe:</b> A beautiful two-way illuminated globe displaying the location of the constellations and various night sky objects. Price: $49.95. Stock Number: CG13-810</li>
+        <li><b>Star and Planet Locators:</b> A pack of 25 star and planet locators &mdash; perfect for classroom use. Price: $29.95. Stock Number: SL25-271</li>
+        <li><b>Rechargeable Red Flashlight:</b> A 4" rechargeable flashlight, employing a red LED to preserve night vision. Price $15.95. Stock Number: RF02-421</li>
+        <li><b>Classroom Planetarium:</b> <span class="Special">March Special! Planetarium kit projects more than 300 stars and constellations onto the ceiling or wall. Perfect for classroom use. Red star flashlight included to point out individual stars. Price $34.95. Stock Number: CP21-789</span></li>
+        <li><b>Solar Mobile:</b> The sun and all nine planets are represented in this attractive mobile. Mobile measures 4 feet across when assembled. Great for classroom demonstrations! Price $14.95. Stock Number: SM4-411</li>
+        <li><b>Solar Mobile Kit:</b> Kit includes 12 styrofoam shapes with wire and connecting rods to create a hanging mobile of the solar system. Makes 20 mobiles. Instructions and lesson plans included. Price $29.95. Stock Number: SM5-411</li>
+    </ul>
+    <div style="clear: both;"></div>
+
+    <h3 class="Special">Comments From Our Astronomy Customers</h3>
+
+    <p>Here at Maxwell Scientific, we strive to deliver high-quality astronomy equipment in a prompt and professional manner. Still, we're as happy as anyone when we receive a compliment!</p>
+
+    <blockquote>"Thank you for your excellent service. I purchased the Newton 3" refractor for our astronomy lab. The view of Saturn was an exciting moment for the entire class." Dawn Hilbert. San Jose, CA</blockquote>
+
+    <blockquote>"I appreciate the prompt delivery of the pack of star disks. Your company is a great boon to science teachers everywhere." Steve Fawson. Cleveland, OH</blockquote>
+
+    <blockquote>"The MC5 Maksutov-Cassegrain was delivered as promised: on-time and at a great price. When it's time to get my next scope, I'll look to your company first."</blockquote>
+    <p >Brenda Dicks. Greely, CO</p>
+
+    <hr/>
+    <div class="centeraddress">
+   
+    <i>Maxwell Scientific</i><br>
+    <i> 205 East Nordheim Drive, Hapton, IL 43129</i><br>
+    <i>Phone: (800) 555-2191 Fax: (812) 555-2192</i>
+    </div>
+
+</body>
+</html>
