@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> Tieu de trang </title>
+        <style>
+          
+            table td {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background:#c1eff0;">
+         <center>
+    <img src="images/Delong.jpg" width="300" height="70">
+    </center>
+    <h3><b> Travel Expense Report</b></h3>
+    <hr/>
+    <form>
+       <p>1&#41;First Name: <input type=""text" name="firstname" color="white"/> Last Name: <input type="text" name="lastname" color="white"/></p>
+       <p>2&#41;Social Security Number: <input type="text" name="number" color="white"/></p>
+         <p>3&#41;Department: 
+            <select >
+                    <option value="Accounting">Accounting</option>
+                    <option value="other">Other</option>
+                </select></p>
+         <p>4&#41;Describe the purpose of your trip:<br/> <textarea name="trip" rows="5" cols="35"></textarea></p>
+        <p>5&#41;Itemize your travel expenses </p>
+        <table border="1" >
+            <tr >
+                <td>Date</td>
+                <td>Description</td>
+                <td>Category</td>
+                <td>Amount</td>
+            </tr>
+            <tr >
+                <td><input type="text" placeholder="mm/dd/yy"></td>
+                <td><input type="text" name="description1"/></td>
+                <td><select>
+                    <option value="Meal">Meal</option>
+                    <option value="other">Other</option>
+                </select></td>
+                <td><input type="text" name="amount1"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="mm/dd/yy"></td>
+                <td><input type="text" name="description2"/></td>
+                <td><select>
+                    <option value="Meal">Meal</option>
+                    <option value="other">Other</option>
+                </select></td>
+                <td><input type="text" name="amount2"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="mm/dd/yy"></td>
+                <td><input type="text" name="description3"/></td>
+                <td><select>
+                    <option value="Meal">Meal</option>
+                    <option value="other">Other</option>
+                </select></td>
+                <td><input type="text" name="amount3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="mm/dd/yy"></td>
+                <td><input type="text" name="description4"/></td>
+                <td><select>
+                    <option value="Meal">Meal</option>
+                    <option value="other">Other</option>
+                </select></td>
+                <td><input type="text" name="amount4"/></td>
+            </tr>
+        </table>
+        <p>6&#41;Have you submitted the receipts? <input type="radio" name="receipts" value="yes"/> Yes <input type="radio" name="receipts" value="no"/> No</p>
+<p> <input type="submit" value="Submit travel expense"/> <input type="reset" value="Reset"/> </p> 
+<p> Questions? Contact Debblie Larson in Accounting &#40;ext.2150&#41;. </p>
+
+
+    </form>
+
+    </div>
+    </body>
+</html>
