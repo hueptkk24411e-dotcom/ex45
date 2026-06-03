@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title>Tieu de trang</title>
+
+    <script type="text/javascript">
+
+        function solve()
+        {
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+            var c = Number(document.getElementById("c").value);
+
+            if(a == 0)
+            {
+                if(b == 0)
+                {
+                    if(c == 0)
+                    {
+                        document.getElementById("result").value =
+                            "Infinite solutions";
+                    }
+                    else
+                    {
+                        document.getElementById("result").value =
+                            "No solution";
+                    }
+                }
+                else
+                {
+                    var x = -c / b;
+
+                    document.getElementById("result").value =
+                        "x = " + x;
+                }
+            }
+            else
+            {
+                var delta = b * b - 4 * a * c;
+
+                if(delta < 0)
+                {
+                    document.getElementById("result").value =
+                        "No real solution";
+                }
+                else if(delta == 0)
+                {
+                    var x = -b / (2 * a);
+
+                    document.getElementById("result").value =
+                        "x1 = x2 = " + x;
+                }
+                else
+                {
+                    var x1 = (-b - Math.sqrt(delta)) / (2 * a);
+                    var x2 = (-b + Math.sqrt(delta)) / (2 * a);
+
+                    document.getElementById("result").value =
+                        "x1 = " + x1 + " ; x2 = " + x2;
+                }
+            }
+        }
+
+        function clearData()
+        {
+            document.getElementById("a").value = "";
+            document.getElementById("b").value = "";
+            document.getElementById("c").value = "";
+            document.getElementById("result").value = "";
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<table border="1" align="center">
+
+    <tr>
+        <td colspan="2" align="center" bgcolor="lightgreen">
+            The quadratic equation
+        </td>
+    </tr>
+
+    <tr>
+        <td>a:</td>
+        <td><input type="text" id="a"></td>
+    </tr>
+
+    <tr>
+        <td>b:</td>
+        <td><input type="text" id="b"></td>
+    </tr>
+
+    <tr>
+        <td>c:</td>
+        <td><input type="text" id="c"></td>
+    </tr>
+
+    <tr>
+        <td>Result:</td>
+        <td>
+            <input type="text" id="result" readonly style="color:red;">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <input type="button" value="Find solution" onclick="solve()">
+            <input type="button" value="Clear" onclick="clearData()">
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

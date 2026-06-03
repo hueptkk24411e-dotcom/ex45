@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title> Tieu de trang </title>
+        <script type="text/javascript"> 
+        function maxValue() 
+        {
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+            var c = Number(document.getElementById("c").value);
+
+            document.getElementById("Result").value =
+                Math.max(a, b, c);
+        }
+
+        function minValue() {
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+            var c = Number(document.getElementById("c").value);
+
+            document.getElementById("Result").value =
+                Math.min(a, b, c);
+        }
+
+        function sinA() {
+            var a = Number(document.getElementById("a").value);
+            var radian = a * Math.PI / 180;
+
+            document.getElementById("Result").value = Math.sin(radian);
+        }
+
+        function cosA() {
+            var a = Number(document.getElementById("a").value);
+            var radian = a * Math.PI / 180;
+
+            document.getElementById("Result").value =
+                Math.cos(radian);
+        }
+        function powerAB() {
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+
+            document.getElementById("Result").value =
+                Math.pow(a, b);
+        }
+
+    </script>
+    </head>
+    <body>
+        <table border="1" text-align="center">
+    <tr>
+        <td>a:</td>
+        <td> <input type="text" id="a"></td>
+    </tr>
+    <tr>
+        <td>b:</td>
+        <td><input type="text" id="b"></td>
+    </tr>
+    <tr>
+        <td>c:</td>
+        <td><input type="text" id="c">  </td>
+    </tr>
+    <tr>
+        <td>Result:</td>
+        <td><input type="text" id="Result" readonly></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="button" value="max" onclick="maxValue()">
+            <input type="button" value="min" onclick="minValue()">
+            <input type="button" value="sin(a)" onclick="sinA()">
+            <input type="button" value="cos(a)" onclick="cosA()">
+            <input type="button" value="a^b" onclick="powerAB()">
+        </td>
+    </tr>
+     </table>
+    </body>
+</html>

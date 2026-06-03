@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title> Tieu de trang </title>
+    <script type="text/javascript">
+
+        function calc1()
+        {
+            var qty = document.getElementById("qty1").value;
+
+            if(isNaN(qty))
+            {
+                alert("Quantity must be a number");
+                return;
+            }
+
+            document.getElementById("money1").value =
+                19.95 * eval(qty);
+        }
+
+        function calc2()
+        {
+            var qty = document.getElementById("qty2").value;
+
+            if(isNaN(qty))
+            {
+                alert("Quantity must be a number");
+                return;
+            }
+
+            document.getElementById("money2").value =
+                29.95 * eval(qty);
+        }
+
+        function calc3()
+        {
+            var qty = document.getElementById("qty3").value;
+
+            if(isNaN(qty))
+            {
+                alert("Quantity must be a number");
+                return;
+            }
+
+            document.getElementById("money3").value =
+                39.95 * eval(qty);
+        }
+
+        function sum()
+        {
+            var m1 = eval(document.getElementById("money1").value);
+            var m2 = eval(document.getElementById("money2").value);
+            var m3 = eval(document.getElementById("money3").value);
+
+            document.getElementById("total").value =
+                m1 + m2 + m3;
+        }
+
+    </script>
+</head>
+
+<body>
+
+<table>
+
+<tr>
+    <th>Part Number</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Qty</th>
+    <th>Item Total</th>
+</tr>
+
+<tr>
+    <td>C112</td>
+    <td>Mouse</td>
+    <td>19.95$</td>
+    <td>
+        <input type="text" id="qty1" onchange="calc1()">
+    </td>
+    <td>
+        <input type="text" id="money1" readonly>
+    </td>
+</tr>
+
+<tr>
+    <td>B124</td>
+    <td>Keyboard US</td>
+    <td>29.95$</td>
+    <td>
+        <input type="text" id="qty2" onchange="calc2()">
+    </td>
+    <td>
+        <input type="text" id="money2" readonly>
+    </td>
+</tr>
+
+<tr>
+    <td>U125</td>
+    <td>USB KingMax</td>
+    <td>39.95$</td>
+    <td>
+        <input type="text" id="qty3" onchange="calc3()">
+    </td>
+    <td>
+        <input type="text" id="money3" readonly>
+    </td>
+</tr>
+<tr>
+    <td colspan="5">
+        <hr/>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="4" align="right">
+        Total:
+    </td>
+
+    <td>
+        <input type="text" id="total" readonly>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="5" align="right">
+        <input type="button" value="Sum" onclick="sum()">
+    </td>
+</tr>
+
+</table>
+
+</body>
+</html>
