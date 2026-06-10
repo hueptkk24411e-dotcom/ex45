@@ -1,0 +1,91 @@
+<html>
+    <head>
+    <title>Member Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+     <script src="js/data.js"></script>
+    <script src="js/mainjs.js"></script>
+   
+</head>
+<body onload="loadDate()">
+
+<h1>Member Registration</h1>
+
+<form name="frmMember">
+
+    Name(*)<br>
+    <input type="text" id="txtName"><br><br>
+
+    Birthday(*) :
+    <select id="day"></select>
+
+    <select id="month"></select>
+
+    <select id="year"></select>
+
+    <br><br>
+
+    Gender(*)
+    <input type="radio" name="gender" value="Man" checked> Man
+    <input type="radio" name="gender" value="Woman"> Woman
+
+    <br><br>
+
+    Email(*)<br>
+    <input type="text" id="txtEmail">
+
+    <br><br>
+
+    Your favorite:
+
+    <br>
+    <input type="checkbox" name="hobby" value="Shopping"> Shopping
+
+    <br>
+    <input type="checkbox" name="hobby" value="Tourism"> Tourism
+
+
+    <br>
+  <input type="checkbox" name="hobby" value="Chat"> Chat
+
+    <br>
+   <input type="checkbox" name="hobby" value="Read a book"> Read a book
+
+    <br>
+   <input type="checkbox" name="hobby" value="Listening to music"> Listening to music
+    <br><br>
+
+    Your favorite color:
+
+    <br>
+    <input type="radio" name="color"  value="Blue"> <span style="background:blue">Blue</span><br>
+   <input type="radio" name="color"  value="Red"> <span style="background:red">Red</span><br>
+
+<input type="radio" name="color"  value="Yellow"> <span style="background:yellow">Yellow</span><br>
+
+<input type="radio" name="color" value="Green"> <span style="background:green">Green</span><br>
+
+<input type="radio" name="color"  value="Violet"> <span style="background:violet">Violet</span><br>
+
+    <br><br>
+
+    <input type="button" value="Sign up" onclick="addMember()">
+
+    <input type="reset" value="Reset">
+
+</form>
+
+<br>
+
+<table border="1" width="700" id="tblMember"  >
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Birthday</th>
+        <th>Hobbies</th>
+        <th>Colors</th>
+    </tr>
+</table>
+
+</body>
+</html>

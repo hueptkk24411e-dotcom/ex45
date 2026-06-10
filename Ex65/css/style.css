@@ -1,0 +1,14 @@
+body{
+    font-family: Arial;
+}
+
+#container{
+    width:700px;
+    margin:auto;
+    border:1px solid black;
+    padding:20px;
+}
+
+button{
+    width:100px;
+}
