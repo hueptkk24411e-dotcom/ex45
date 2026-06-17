@@ -15,12 +15,7 @@ th{
     background:green;
     color:white;
 }
-
 tbody tr:hover{
     background-color:yellow;
     cursor:pointer;
-}
-
-#detail{
-    margin-top:20px;
 }
