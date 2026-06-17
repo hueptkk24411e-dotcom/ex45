@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Tieu de trang </title>
+         <script src="mainjs.js"></script>
+    <style>
+
+        table{
+            border-collapse:collapse;
+            width:500px;
+            margin-top:10px;
+        }
+        table,tr,th,td{
+            border:1px solid black;
+            padding:8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button onclick="loadCDCollection()">
+        Get my CD collection
+    </button>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Artist</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+
+        <tbody id="bodycd">
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

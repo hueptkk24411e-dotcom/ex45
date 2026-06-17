@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Information</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="student.js"></script>
+    <script src="mainjs.js"></script>
+</head>
+
+<body>
+
+    
+
+    <table id="tblStudents" border="1">
+
+        <thead>
+            <tr>
+                <th colspan="4" class="title-row">List of Students</th>
+            </tr>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Birthday</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+
+        <tbody id="bodyStudents">
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <table id="detail" border="1">
+
+        <tr>
+            <th colspan="2">Student Information</th>
+        </tr>
+
+        <tr>
+            <td>Student ID</td>
+            <td id="sid"></td>
+        </tr>
+
+        <tr>
+            <td>Student Name</td>
+            <td id="sname"></td>
+        </tr>
+
+        <tr>
+            <td>Birthday</td>
+            <td id="sbirthday"></td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td id="sgender"></td>
+        </tr>
+
+    </table>
+
+    <script>
+        load_students(
+            student,
+            document.getElementById("bodyStudents")
+        );
+    </script>
+
+</body>
+
+</html>
